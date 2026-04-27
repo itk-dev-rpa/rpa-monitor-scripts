@@ -6,7 +6,7 @@ from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).parent / "scripts"
 LOG_FILE = Path(__file__).parent / "Scripts.log"
-INTERVAL_SECONDS = 5
+INTERVAL_SECONDS = 30 * 60
 
 logging.basicConfig(
     filename=LOG_FILE,
