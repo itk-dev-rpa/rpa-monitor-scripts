@@ -1,0 +1,1 @@
+nssm install rpa-monitor-scripts

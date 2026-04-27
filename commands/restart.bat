@@ -1,0 +1,1 @@
+nssm restart rpa-monitor-scripts
