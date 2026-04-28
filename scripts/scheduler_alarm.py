@@ -29,7 +29,7 @@ def count_late_triggers():
 def send_alert(count: int) -> None:
     msg = EmailMessage()
     msg["From"] = "robot@friend.dk"
-    msg["To"] = "ghbm@aarhus.dk"
+    msg["To"] = ["ghbm@aarhus.dk", "kriba@aarhus.dk"]
     msg["Subject"] = "Robotter er ikke gået i gang til tiden!"
     msg.set_content(
         f"Hjælp! {count} robotter er ikke gået i gang til tiden!! 😨"

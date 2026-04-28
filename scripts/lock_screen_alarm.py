@@ -11,7 +11,7 @@ def is_locked() -> bool:
 def send_alert() -> None:
     msg = EmailMessage()
     msg["From"] = "robot@friend.dk"
-    msg["To"] = "ghbm@aarhus.dk"
+    msg["To"] = ["ghbm@aarhus.dk", "kriba@aarhus.dk"]
     msg["Subject"] = "Læseskærm er aktiv!"
     msg.set_content(
         "Hjælp læseskærmen er aktiv!"
